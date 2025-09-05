@@ -1,0 +1,26 @@
+/* .category{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+     
+} */
+
+.category {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;   /* shrink hone se rokta hai */
+}
+.category h3{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+}

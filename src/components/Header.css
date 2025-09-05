@@ -1,0 +1,87 @@
+.header{
+    height: 65px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.logo{
+    width: 130px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.searchBar{
+        position: relative;
+
+}
+.searchBar input{
+    width: 45vw;
+    height: 45px;
+    padding-left: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+.searchBar input:focus {
+  outline: none;   /* removes the default blue glow/outline */
+  border: none;    /* removes border */
+}
+.searchBar i{
+    position: absolute;
+    z-index: 100;
+    top: 15px;
+    left: 10px;
+    color: grey;
+}
+.dropdown span{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.cart span{
+    font-size: 16px;
+     font-weight: 200;
+}
+.seller{
+    font-size: 16px;
+     font-weight: 200;
+}
+
+
+@media(max-width:1150px){
+    .searchBar input{
+        font-size: 12px;
+    }
+    span{
+        display: none;
+    }
+}
+
+@media(max-width: 675px){
+    .header{
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 110px;
+        height: 50px;
+    }
+    .seller{
+        display: none;
+    }
+    .searchBar input{
+        font-size: 7px;
+    }
+    
+}

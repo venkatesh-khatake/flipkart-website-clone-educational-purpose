@@ -1,0 +1,15 @@
+.flightBooking{
+    width: 20vw;
+    height: 100%;
+    padding-top: 20px;
+}
+.flightBooking img{
+    width: 100%;
+    height: 350px;
+}
+
+@media (max-width:1000px){
+    .flightBooking{
+        display: none;
+    }
+}

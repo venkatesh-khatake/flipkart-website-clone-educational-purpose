@@ -1,0 +1,25 @@
+/* .categoryList{
+    width: 100vw;
+    height: 130px;
+    background-color: white;
+    margin-top: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-wrap: normal;
+} */
+
+.categoryList {
+    width: 100vw;
+    height: 130px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;   /* scroll bar aayega */
+    scroll-behavior: smooth; /* optional - smooth scrolling */
+}

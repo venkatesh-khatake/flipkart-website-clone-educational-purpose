@@ -1,0 +1,28 @@
+.cardList{
+    width: 78vw;
+    height: 350px;
+    background-color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media(max-width:1000px){
+    .cardList{
+        width: 100%;
+    }
+}
+.cards{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    gap: 5vw;
+    padding: 10px 25px;
+}

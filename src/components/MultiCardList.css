@@ -1,0 +1,23 @@
+.multicardList{
+    height: 100vw;
+    height: 350px;
+    background-color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cards{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    gap: 5vw;
+    padding: 10px 25px;
+}

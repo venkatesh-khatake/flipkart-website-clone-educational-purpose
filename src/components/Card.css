@@ -1,0 +1,24 @@
+.card{
+    height: 100%;
+    width: 250px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.card img{
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    min-height: 150px;
+}
+.card h4{
+font-weight: 400;
+font-size: 15px;
+}
+.card h5{
+    font-weight: 700;
+}
