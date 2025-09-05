@@ -1,6 +1,6 @@
 import React from "react";
 import './FlightBooking.css'
-import FlightPoster from "/assets/flightBookingPoster.webp";
+import FlightPoster from "../assets/flightBookingPoster.webp";
 
 const FlightBooking = () => {
   return (

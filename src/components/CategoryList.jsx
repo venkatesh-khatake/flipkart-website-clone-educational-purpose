@@ -2,17 +2,17 @@ import React from 'react'
 import './CategoryList.css';
 import Category from './Category';
 
-import minutes from '/assets/minutes.webp';
-import topOffers from '/assets/topOffers.webp';
-import mobiles from '/assets/mobiles.webp';
-import tv from '/assets/tv.webp';
-import electronics from '/assets/electronics.webp';
-import fashion from '/assets/fashion.webp';
-import homeKitchen from '/assets/homeKitchen.webp';
-import toys from '/assets/toys.webp';
-import furniture from '/assets/furniture.webp';
-import flightbook from '/assets/flightbook.webp';
-import grocery from '/assets/grocery.webp';
+import minutes from '../assets/minutes.webp';
+import topOffers from '../assets/topOffers.webp';
+import mobiles from '../assets/mobiles.webp';
+import tv from '../assets/tv.webp';
+import electronics from '../assets/electronics.webp';
+import fashion from '../assets/fashion.webp';
+import homeKitchen from '../assets/homeKitchen.webp';
+import toys from '../assets/toys.webp';
+import furniture from '../assets/furniture.webp';
+import flightbook from '../assets/flightbook.webp';
+import grocery from '../assets/grocery.webp';
 
 
 const CategoryList = () => {

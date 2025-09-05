@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './PosterScroll.css';
 
-import Poster1 from '/assets/poster1.webp';
-import Poster2 from '/assets/poster2.webp';
-import Poster3 from '/assets/poster3.webp';
+import Poster1 from '../assets/poster1.webp';
+import Poster2 from '../assets/poster2.webp';
+import Poster3 from '../assets/poster3.webp';
 
 
 
