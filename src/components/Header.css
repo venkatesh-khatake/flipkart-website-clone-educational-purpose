@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
     gap: 35px;
+    top: 0;
+    /* left: 0; */
+      z-index: 1000;
+    position: sticky;
 }
 .logo{
     width: 130px;

@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #1e272e;
+    color: white;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer h3{
+    font-size: 15px;
+    font-weight: 200;
+    color: grey;
+}
+.footer ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}

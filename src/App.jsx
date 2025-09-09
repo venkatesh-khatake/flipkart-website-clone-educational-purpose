@@ -5,8 +5,8 @@ import CategoryList from "./components/CategoryList.jsx";
 import PosterScroll from "./components/PosterScroll.jsx";
 import CardList from "./components/CardList";
 import FlightBooking from "./components/FlightBooking";
-import MultiCardList from './components/MultiCardList';
-
+import MultiCardList from "./components/MultiCardList";
+import NotFound from "./components/NotFound.jsx";
 
 // electronics
 import Monitors from "./assets/monitors.webp";
@@ -17,15 +17,19 @@ import cam from "./assets/cam.webp";
 import buds from "./assets/buds.webp";
 import Printers from "./assets/printers.webp";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Batman from './assets/batman.webp';
-import Pens from './assets/pens.webp';
-import Bicycle from './assets/bicycle.webp';
-import Remote from './assets/remoteControltoy.webp';
-import DryFruits from './assets/dryFruits.webp';
-import Coffee from './assets/coffee.webp';
-import Soft from './assets/softtoys.webp';
-
+import Batman from "./assets/batman.webp";
+import Pens from "./assets/pens.webp";
+import Bicycle from "./assets/bicycle.webp";
+import Remote from "./assets/remoteControltoy.webp";
+import DryFruits from "./assets/dryFruits.webp";
+import Coffee from "./assets/coffee.webp";
+import Soft from "./assets/softtoys.webp";
+import Footer from "./components/Footer.jsx";
+import ProductCard from "./components/ProductCard.jsx";
+import ProductList from "./components/ProductList.jsx";
+// import { Route } from "react-router-dom";
 
 const App = () => {
   const electronics = [
@@ -39,27 +43,43 @@ const App = () => {
   ];
 
   const data2 = [
-    {name : "Best of Action Toys", image : Batman, price : "Up to 70% off"},
-    {name : "Top Selling Stationary", image : Pens, price : "From ₹49"},
-    {name : "Remote Control Toys", image : Remote, price : "Up to 80% off"},
-    {name : "Geared Cycles", image : Bicycle, price : "up to 70% off"},
-    {name : "Coffee Powder", image : Coffee, price : "Up to 75% off"},
-    {name : "Dry Fruits", image : DryFruits, price : "Up to 75% off"},
-    {name : "Soft Toys", image : Soft, price : "Up to 75% off"},
-
+    { name: "Best of Action Toys", image: Batman, price: "Up to 70% off" },
+    { name: "Top Selling Stationary", image: Pens, price: "From ₹49" },
+    { name: "Remote Control Toys", image: Remote, price: "Up to 80% off" },
+    { name: "Geared Cycles", image: Bicycle, price: "up to 70% off" },
+    { name: "Coffee Powder", image: Coffee, price: "Up to 75% off" },
+    { name: "Dry Fruits", image: DryFruits, price: "Up to 75% off" },
+    { name: "Soft Toys", image: Soft, price: "Up to 75% off" },
   ];
 
   return (
-    <div>
+    <Router basename="/flipkart-website-clone-educational-purpose">
       <Header />
-      <CategoryList />
-      <PosterScroll />
-      <div className="container">
-        <CardList title={"Best of Electronics"} data={electronics} />
-        <FlightBooking />
-      </div>
-      <MultiCardList title={"Beauty, Food, Toys & more"} data={data2} />
-    </div>
+      <Routes>
+        {/* Home page */}
+        <Route
+          path="/"
+          element={
+            <div>
+              {/* <Header /> */}
+              <CategoryList />
+              <PosterScroll />
+              <div className="container">
+                <CardList title={"Best of Electronics"} data={electronics} />
+                <FlightBooking />
+              </div>
+              <MultiCardList title={"Beauty, Food, Toys & more"} data={data2} />
+
+              {/* <ProductList/> */}
+            </div>
+          }
+        ></Route>
+
+        <Route path="/mobiles" element={<ProductList />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 
