@@ -52,10 +52,16 @@
 @media(max-width: 745px){
     .details{
         flex-direction: column;
-        padding: 0 25px;
+        padding: 25px;
+        height: auto;
+        
+    }
+    .details img{
+        width: 100%;
     }
     .details h2{
         font-size: 25px;
+        font-weight: 700;
     }
     .btns{
         justify-content: center;
