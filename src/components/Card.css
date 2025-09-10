@@ -7,13 +7,23 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    transition: all 0.3s ease;
 }
+/* .card:hover{
+    scale: 1.1;
+} */
 .card img{
     width: auto;
     max-width: 150px;
     max-height: 150px;
     height: auto;
     min-height: 150px;
+    margin-bottom: 10px;
+        transition: all 0.3s ease;
+
+}
+.card img:hover{
+    scale: 1.1;
 }
 .card h4{
 font-weight: 400;

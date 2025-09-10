@@ -29,6 +29,8 @@ import Soft from "./assets/softtoys.webp";
 import Footer from "./components/Footer.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import ProductList from "./components/ProductList.jsx";
+import MobileDetail from "./components/ProductDetails.jsx";
+import ProductDetails from "./components/ProductDetails.jsx";
 // import { Route } from "react-router-dom";
 
 const App = () => {
@@ -77,6 +79,7 @@ const App = () => {
 
         <Route path="/mobiles" element={<ProductList />}></Route>
         <Route path="*" element={<NotFound />}></Route>
+        <Route path = '/mobiles/:id' element = {<ProductDetails/>}></Route>
       </Routes>
       <Footer />
     </Router>

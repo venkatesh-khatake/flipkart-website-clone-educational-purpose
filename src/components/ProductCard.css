@@ -2,17 +2,22 @@
     width: 250px;
     height: 300px;
     background-color: white;
-
-    color: blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     justify-content: center;
     gap: 10px;
+    transition: all 0.3s ease;
+}
+.productCard img:hover{
+    scale: 1.1;
 }
 .productCard img{
     width: 100%;
     height: 200px;
+    transition: all 0.3s ease;
 
 }
