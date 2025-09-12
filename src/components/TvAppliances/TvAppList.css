@@ -1,0 +1,12 @@
+.tvAppList{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-top: 15px;
+}

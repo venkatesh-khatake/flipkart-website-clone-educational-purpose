@@ -7,6 +7,16 @@ import CardList from "./components/CardList";
 import FlightBooking from "./components/FlightBooking";
 import MultiCardList from "./components/MultiCardList";
 import NotFound from "./components/NotFound.jsx";
+import FashionList from "./components/Fashion/FashionList";
+import FashionDetails from "./components/Fashion/FashionDetails";
+
+
+// Json FIles
+import Mobiles from "./JsonFiles/Mobiles.json";
+import fashionData from "./JsonFiles/Fashion.json";
+import TvAppliances from "./JsonFiles/tvAppliances.json";
+import Kitchen from "./JsonFiles/Kitchen.json";
+
 
 // electronics
 import Monitors from "./assets/monitors.webp";
@@ -31,6 +41,10 @@ import ProductCard from "./components/ProductCard.jsx";
 import ProductList from "./components/ProductList.jsx";
 import MobileDetail from "./components/ProductDetails.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
+import TvAppDetails from "./components/TvAppliances/TvAppDetails.jsx";
+import TvAppList from "./components/TvAppliances/TvAppList.jsx";
+import HomeKitchenList from "./components/Home&Kitchen/HomeKitchenList.jsx";
+import HomeKitchenDetails from "./components/Home&Kitchen/HomeKitchenDetails.jsx";
 // import { Route } from "react-router-dom";
 
 const App = () => {
@@ -77,9 +91,16 @@ const App = () => {
           }
         ></Route>
 
-        <Route path="/mobiles" element={<ProductList />}></Route>
+        <Route path="/mobiles" element={<ProductList data={Mobiles} />}></Route>
         <Route path="*" element={<NotFound />}></Route>
-        <Route path = '/mobiles/:id' element = {<ProductDetails/>}></Route>
+        <Route path="/mobiles/:id" element={<ProductDetails />}></Route>
+        <Route path="/tv" element={<TvAppList data={TvAppliances} />}></Route>
+        <Route path="/tv/:id" element={<TvAppDetails />} />
+        <Route path="/fashion" element={<FashionList data={fashionData} />} />
+        <Route path="/fashion/:id" element={<FashionDetails />} />
+                <Route path="/home-kitchen" element={<HomeKitchenList data={Kitchen} />} />
+        <Route path="/home-kitchen/:id" element={<HomeKitchenDetails />} />
+
       </Routes>
       <Footer />
     </Router>

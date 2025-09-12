@@ -24,10 +24,10 @@ const CategoryList = () => {
   <Category image={minutes} name="Minutes" />
   <Category image={topOffers} name="Top Offers" />
   <Category image={mobiles} name="Mobiles" link ="/mobiles" />
-  <Category image={tv} name="TVs & Appliances" />
+  <Category image={tv} name="TVs & Appliances"  link = "/tv"/>
   <Category image={electronics} name="Electronics" />
-  <Category image={fashion} name="Fashion" />
-  <Category image={homeKitchen} name="Homes & Kitchen" />
+  <Category image={fashion} name="Fashion"  link="/fashion"/>
+  <Category image={homeKitchen} name="Homes & Kitchen"  link="/home-kitchen"/>
   <Category image={toys} name="Beauty & Toys" />
   <Category image={furniture} name="Furniture" />
   <Category image={flightbook} name="Flight Bookings" />

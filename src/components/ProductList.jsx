@@ -1,15 +1,14 @@
 import React from 'react'
 import './ProductList.css';
-import Mobiles from '../JsonFiles/Mobiles.json';
 import ProductCard from './ProductCard';
 import { Link } from "react-router-dom";
 
-const ProductList = () => {
+const ProductList = ({data}) => {
   return (
     <div className='productList'>
       
        {
-        Mobiles.map((mobile) => (
+        data.map((mobile) => (
           <Link to={`/mobiles/${mobile.id}`} key={mobile.id} style={{ textDecoration:"none", color:"black"}}>
             <ProductCard 
               name={mobile.brand} 
